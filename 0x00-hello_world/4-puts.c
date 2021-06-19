@@ -3,8 +3,7 @@
  *
  * main - Entry point
  *
- * return Alaways (sucess return 0) 
- *
+ * Return: Alaways (sucess return 0)
  */
 int main(void)
 {
