@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - bring back if n is positive, negative or zero
  *
- *Return: Alaways 0
+ * Return: Alaways 0
  */
 int main(void)
 {
