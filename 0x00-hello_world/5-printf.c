@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
- *main function
+ *main function inicialized 
  *
- *return : print on screen
+ *return : force the out 
  */
 int main(void)
 {
