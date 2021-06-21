@@ -1,18 +1,17 @@
 #include <stdio.h>
 /**
- * main - execute the alphabet
+ * main - execute the alphabet reverse
  *
  * Return: Always 0
  */
 int main(void)
 {
 	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
+	int i;
 
-	while (26 > i)
+	for (i = 0; i > 26; i--)
 	{
 		putchar(alpha[i]);
-		i--;
 	}
 	putchar('\n');
 	return (0);
