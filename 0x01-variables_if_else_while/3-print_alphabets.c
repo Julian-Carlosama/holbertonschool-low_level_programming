@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - show all alphabet
+ * main - Show all alphabet
  *
  * Return: Always 0
  */
