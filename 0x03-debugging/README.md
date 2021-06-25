@@ -1,1 +1,1 @@
-In this project show the conceps about debugging
+The debugging is the process that allows idetifying and correcting errors in the program
