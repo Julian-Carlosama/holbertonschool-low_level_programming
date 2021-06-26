@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - Print if c is upper
+ * _isupper - Print if c is upper
  *
  * @c: Is te value to process
  *
