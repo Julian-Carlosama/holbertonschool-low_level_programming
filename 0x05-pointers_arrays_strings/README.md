@@ -1,0 +1,1 @@
+This is a introduction bassic about the concepts of pointers, arrays and strings.
