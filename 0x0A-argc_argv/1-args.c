@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -6,13 +5,13 @@
  *
  * @argc: is the array elements
  *
- * @argv: Is the array witch the argumments
- *
  * Return: Always 0
  */
 
-int main(int argc, char** argv __attribute__((unused)))
+int main(int argc)
 {
+
 	printf("%d \n", argc - 1);
+
 	return (0);
 }
