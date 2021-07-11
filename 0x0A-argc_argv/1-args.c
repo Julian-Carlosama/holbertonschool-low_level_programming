@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -10,7 +11,7 @@
  * Return: Always 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char** argv)
 {
 	(void)argv;
 	printf("%d \n", argc - 1);
