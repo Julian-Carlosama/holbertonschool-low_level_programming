@@ -2,9 +2,6 @@
 
 #define _DOG_H_
 
-typedef struct dog dog_t;
-
-
 /**
  * struct dog - store information of a dog
  *
