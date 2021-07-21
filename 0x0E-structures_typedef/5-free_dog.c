@@ -11,5 +11,11 @@
 
 void free_dog(dog_t *d)
 {
-	
+	if (!d)
+		return;
+	else
+	{
+		free(d);
+		free(d);
+	}
 }
