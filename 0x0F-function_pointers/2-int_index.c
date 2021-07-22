@@ -16,16 +16,17 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int count = 0, aux;
 
-	if (!(array) && !(cmp) && (size > 0))
+	if ((array != NULL) && (cmp != NULL) && (size != 0))
 	{
+		int count = 0, aux;
+
 		while (count < size)
 		{
+			count++;
 			aux = cmp(array[count]);
 			if (aux == 1)
 				return (count);
-		count++;
 		}
 		if (aux == 0)
 			return (-1);
