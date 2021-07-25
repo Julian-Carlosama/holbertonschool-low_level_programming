@@ -1,26 +1,89 @@
 #include "variadic_functions.h"
 
+
 /**
- * print_numbers - prints numbers.
- * @separator: string to be printed between numbers.
- * @n: number of integers passed to the function.
+ * cha - print va_arg c
  *
- * Return: no return.
+ * @c: va_list
+ *
+ * Return: no return
  */
+void cha(va_list c)
+{
+	printf("%c", va_arg(c, int));
+}
 
-void print_all(const char * const format, ...){
-	va_list valist;
-	unsigned int i;
+/**
+ * pri - print va_arg i
+ *
+ * @i: list
+ */
+void pri(va_list i)
+{
+	printf("%d", va_arg(i, int));
+}
 
-	va_start(valist, n);
+/**
+ * flo - print va_arg f
+ *
+ * @f: list
+ */
+void flo(va_list f)
+{
+	printf("%f", va_arg(f, double));
+}
 
-	for (i = 0; i < n; i++)
+/**
+ * str - print va_arg x
+ *
+ * @s: the list.
+ */
+void str(va_list s)
+{
+	char *max;
+
+	max = va_arg(s, char *);
+	if (max == NULL)
+		max = "(nil)";
+	printf("%s", max);
+}
+
+/**
+ * print_all - prints anything.
+ *
+ * @format: amount arguments
+ *
+ * Return: no return
+ */
+void print_all(const char * const format, ...)
+{
+	int x = 0, z = 0;
+	char *space = "";
+	print_data print_any[] = {
+	{"c", cha},
+	{"i", pri},
+	{"f", flo},
+	{"s", str},
+};
+	va_list all;
+
+	va_start(all, format);
+while (format && format[x])
+{
+	while (print_any[z].spec)
 	{
-		printf("%d", va_arg(valist, int));
-		if (separator && i < n - 1)
-			printf("%s", separator);
+		if (format[x] == *(print_any[z].spec))
+		{
+			printf("%s", space);
+			print_any[z].function(all);
+			space = ", ";
+			break;
+		}
+		z++;
 	}
-
-	printf("\n");
-	va_end(valist);
+	z = 0;
+	x++;
+}
+va_end(all);
+printf("\n");
 }
