@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 	int elmts;
 	listint_t *aux;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
 
 	aux = (*head);
