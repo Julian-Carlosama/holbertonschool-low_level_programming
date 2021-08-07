@@ -4,7 +4,7 @@
  * binary_to_uint - Convert string in binary to
  * integer.
  *
- * @b: Pointers to String to process
+ * @b: Pointers to String to process.
  *
  * Return: Integer number or NULL if
  * is another thing.
