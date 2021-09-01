@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * jack_bauer - Function that print the minutes and the hours
