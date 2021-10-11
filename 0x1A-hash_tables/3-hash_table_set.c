@@ -4,7 +4,7 @@
  * hash_table_set - adds an element to the hash table.
  *
  * @ht: hash table to add or update the key/value.
- * 
+ *
  * @key: key, key can not be an empty string.
  *
  * @value: Is the value associated with the key.
@@ -18,7 +18,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new = NULL, *aux = NULL;
 	unsigned long int index = 0;
 
-	if (ht == NULL || key == NULL || key == '\0')
+	if (ht == NULL || key == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *) key, ht->size);
