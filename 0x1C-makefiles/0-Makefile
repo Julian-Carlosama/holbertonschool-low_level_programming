@@ -1,2 +1,2 @@
 all:
-	gcc holberton.c main.c Makefile -o school
+	gcc holberton.c main.c -o school
