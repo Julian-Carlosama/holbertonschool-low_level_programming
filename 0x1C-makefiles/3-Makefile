@@ -1,0 +1,11 @@
+CC = gcc
+SRC = holberton.c main.c
+OBJ = $(SRC:%.c=%.o)
+NAME = school
+RM = rm
+
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+clean:
+	${RM} * ${NAME}
