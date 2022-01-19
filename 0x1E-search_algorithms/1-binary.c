@@ -28,7 +28,7 @@ int binary_search(int *array, size_t size, int value)
 		index = left;
 		for (; index < right; index++)
 			printf("%d, ", array[index]);
-			
+
 		printf("%d\n", array[index]);
 
 		medio = (left + right) / 2; /*Set the middle of the array*/
@@ -43,5 +43,5 @@ int binary_search(int *array, size_t size, int value)
 		else
 			left = medio + 1;
 	}
-	return -1;
+	return (-1);
 }
