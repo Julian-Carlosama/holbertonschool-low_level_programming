@@ -9,7 +9,7 @@
   *
   * @value: Value to search.
   *
-  * Retrun: The vale to find.
+  * Return: The vale to find.
   */
 int binary_search(int *array, size_t size, int value)
 {
