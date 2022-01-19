@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
-  * int linear_search - Lineal search function.
+  * linear_search - Lineal search function.
   *
   * @array: Array that contents elements to search.
   *
@@ -9,7 +9,7 @@
   *
   * @value: Value to search.
   *
-  * Retrun: The vale to find.
+  * Return: The vale to find.
   */
 
 int linear_search(int *array, size_t size, int value)
